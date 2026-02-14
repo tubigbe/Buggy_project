@@ -16,7 +16,7 @@ $PROJECT_PATH = "E:\Buggy_project"
 $SKILLS_PATH = "E:\Buggy_project\skills"
 
 # GitHub 远程仓库名称（如：origin）
-$REMOTE_TARGET = "Buggy_project"
+$REMOTE_TARGET = "origin"
 
 # 提交信息中的修改说明（可留空，脚本会提示输入）
 $MODIFICATION_DESCRIPTION = ""

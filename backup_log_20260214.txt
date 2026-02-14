@@ -1,0 +1,12 @@
+﻿[2026-02-14 17:14:21] [INFO] === 自动备份脚本启动 ===
+[2026-02-14 17:14:21] [INFO] 项目路径：E:\Buggy_project
+[2026-02-14 17:14:21] [INFO] Skills 目录：E:\Buggy_project\skills
+[2026-02-14 17:14:21] [INFO] Git 仓库检测完成
+[2026-02-14 17:14:21] [INFO] 检测到代码有变更
+[2026-02-14 17:14:21] [INFO] 变更详情：
+ M files/Super_Fast_Buggy.X/Super_Fast_Buggy.mc3  M files/Super_Fast_Buggy.X/mcc-manifest-autosave.yml  M files/Super_Fast_Buggy.X/mcc-manifest-generated-success.yml  M files/Super_Fast_Buggy.X/mcc_generated_files/system/pins.h  M files/Super_Fast_Buggy.X/mcc_generated_files/system/src/pins.c  M files/Super_Fast_Buggy.X/nbproject/Makefile-genesis.properties  M files/Super_Fast_Buggy.X/nbproject/configurations.xml  D "skills/\346\226\207\346\241\243\345\217\257\350\257\273\346\200\247\350\246\201\346\261\202.md"  D "skills/\351\241\271\347\233\256\350\203\214\346\231\257\344\270\216\347\233\256\346\240\207.md"  D "skills/\351\241\271\347\233\256\350\277\233\345\261\225.md" ?? .tmp.driveupload/ ?? auto_backup.ps1 ?? skills/document_readability_requirements.md ?? skills/git_folder_restrictions.md ?? skills/project_background_and_goals.md ?? skills/project_progress.md
+[2026-02-14 17:14:50] [INFO] 修改说明：小小的脚本测试
+[2026-02-14 17:14:50] [INFO] 提交信息：[Auto-Sync] 2026-02-14 17:14 | 修改说明: 小小的脚本测试
+[2026-02-14 17:14:51] [INFO] 执行 git add .
+[2026-02-14 17:14:52] [INFO] 执行 git commit
+[2026-02-14 17:14:52] [ERROR] 推送失败！错误信息：fatal: 'Buggy_project' does not appear to be a git repository fatal: Could not read from remote repository. System.Management.Automation.RemoteException Please make sure you have the correct access rights and the repository exists.

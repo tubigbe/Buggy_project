@@ -1,0 +1,572 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18326 ]
+[d frameptr 6 ]
+"89 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/adc/src/adc.c
+[e E6336 . `uc
+ADC_CHANNEL_AVSS 60
+ADC_CHANNEL_TEMP 61
+ADC_CHANNEL_DAC1 62
+ADC_CHANNEL_FVR 63
+ADC_CHANNEL_ANA0 0
+ADC_CHANNEL_ANC2 18
+]
+"126
+[e E6344 . `uc
+ADC_TRIGGER_SOURCE_NO_AUTO_TRIGGER 0
+ADC_TRIGGER_SOURCE_TMR4_MATCH_PR4 1
+ADC_TRIGGER_SOURCE_TMR6_MATCH_PR6 2
+ADC_TRIGGER_SOURCE_TMR0_OVERFLOW 3
+ADC_TRIGGER_SOURCE_TMR1_OVERFLOW 4
+ADC_TRIGGER_SOURCE_TMR2_MATCH_PR2 5
+ADC_TRIGGER_SOURCE_C1OUT 6
+ADC_TRIGGER_SOURCE_C2OUT 7
+ADC_TRIGGER_SOURCE_CLC1 8
+ADC_TRIGGER_SOURCE_CLC2 9
+ADC_TRIGGER_SOURCE_CLC3 10
+ADC_TRIGGER_SOURCE_CLC4 11
+ADC_TRIGGER_SOURCE_CCP1 12
+ADC_TRIGGER_SOURCE_CCP2 13
+ADC_TRIGGER_SOURCE_CCP3 14
+ADC_TRIGGER_SOURCE_CCP4 15
+ADC_TRIGGER_SOURCE_TMR3_OVERFLOW 16
+ADC_TRIGGER_SOURCE_TMR5_OVERFLOW 17
+]
+"48 E:\Buggy_project\files\Super_Fast_Buggy.X\main.c
+[e E6352 . `uc
+ADC_CHANNEL_AVSS 60
+ADC_CHANNEL_TEMP 61
+ADC_CHANNEL_DAC1 62
+ADC_CHANNEL_FVR 63
+ADC_CHANNEL_ANA0 0
+ADC_CHANNEL_ANC2 18
+]
+"10 D:\MPLABX\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 D:\MPLABX\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 D:\MPLABX\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\MPLABX\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"44 E:\Buggy_project\files\Super_Fast_Buggy.X\main.c
+[v _timer_Interrupt_Routine timer_Interrupt_Routine `(v  1 e 1 0 ]
+"54
+[v _main main `(i  1 e 2 0 ]
+"47 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"114
+[v _ADC_ChannelSelectAndConvert ADC_ChannelSelectAndConvert `(s  1 e 2 0 ]
+"161
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+"51 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/pwm/src/ccp1.c
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+"45 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/pwm/src/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+"63
+[v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
+"39 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"40 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"59
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"92
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"101
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"105
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"39 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"46 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"79
+[v _TMR0_Start TMR0_Start `(v  1 e 1 0 ]
+"139
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"151
+[v _TMR0_OverflowCallbackRegister TMR0_OverflowCallbackRegister `(v  1 e 1 0 ]
+"156
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
+"64 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"75
+[v _TMR2_Deinitialize TMR2_Deinitialize `(v  1 e 1 0 ]
+"89
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"94
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"99
+[v _TMR2_CounterGet TMR2_CounterGet `(ul  1 e 4 0 ]
+"104
+[v _TMR2_CounterSet TMR2_CounterSet `(v  1 e 1 0 ]
+"109
+[v _TMR2_PeriodSet TMR2_PeriodSet `(v  1 e 1 0 ]
+"114
+[v _TMR2_PeriodGet TMR2_PeriodGet `(ul  1 e 4 0 ]
+"119
+[v _TMR2_MaxCountGet TMR2_MaxCountGet `(ul  1 e 4 0 ]
+"125
+[v _TMR2_PeriodMatchCallbackRegister TMR2_PeriodMatchCallbackRegister `(v  1 e 1 0 ]
+"130
+[v _TMR2_DefaultPeriodMatchCallback TMR2_DefaultPeriodMatchCallback `(v  1 s 1 TMR2_DefaultPeriodMatchCallback ]
+"135
+[v _TMR2_Tasks TMR2_Tasks `(v  1 e 1 0 ]
+"64 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr6.c
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+"75
+[v _TMR6_Deinitialize TMR6_Deinitialize `(v  1 e 1 0 ]
+"89
+[v _TMR6_Start TMR6_Start `(v  1 e 1 0 ]
+"94
+[v _TMR6_Stop TMR6_Stop `(v  1 e 1 0 ]
+"99
+[v _TMR6_CounterGet TMR6_CounterGet `(ul  1 e 4 0 ]
+"104
+[v _TMR6_CounterSet TMR6_CounterSet `(v  1 e 1 0 ]
+"109
+[v _TMR6_PeriodSet TMR6_PeriodSet `(v  1 e 1 0 ]
+"114
+[v _TMR6_PeriodGet TMR6_PeriodGet `(ul  1 e 4 0 ]
+"119
+[v _TMR6_MaxCountGet TMR6_MaxCountGet `(ul  1 e 4 0 ]
+"125
+[v _TMR6_PeriodMatchCallbackRegister TMR6_PeriodMatchCallbackRegister `(v  1 e 1 0 ]
+"130
+[v _TMR6_DefaultPeriodMatchCallback TMR6_DefaultPeriodMatchCallback `(v  1 s 1 TMR6_DefaultPeriodMatchCallback ]
+"135
+[v _TMR6_Tasks TMR6_Tasks `(v  1 e 1 0 ]
+[s S319 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"348 D:/MPLABX/packs/Microchip/PIC16F1xxxx_DFP/1.29.444/xc8\pic\include\proc/pic16f18326.h
+[u S324 . 1 `S319 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES324  1 e 1 @11 ]
+[s S306 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"481
+[u S311 . 1 `S306 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES311  1 e 1 @16 ]
+[s S66 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"518
+[u S75 . 1 `S66 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES75  1 e 1 @17 ]
+[s S643 . 1 `uc 1 NCO1IF 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 BCL2IF 1 0 :1:2 
+`uc 1 SSP2IF 1 0 :1:3 
+`uc 1 NVMIF 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 TMR6IF 1 0 :1:7 
+]
+"580
+[u S652 . 1 `S643 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES652  1 e 1 @18 ]
+"749
+[v _TMR0L TMR0L `VEuc  1 e 1 @21 ]
+"887
+[v _TMR0H TMR0H `VEuc  1 e 1 @22 ]
+"1041
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @23 ]
+[s S497 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"1061
+[s S503 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S508 . 1 `S497 1 . 1 0 `S503 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES508  1 e 1 @23 ]
+"1106
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @24 ]
+"1372
+[v _TMR2 TMR2 `VEuc  1 e 1 @29 ]
+"1392
+[v _PR2 PR2 `VEuc  1 e 1 @30 ]
+"1412
+[v _T2CON T2CON `VEuc  1 e 1 @31 ]
+[s S866 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1433
+[s S870 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S878 . 1 `S866 1 . 1 0 `S870 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES878  1 e 1 @31 ]
+"1483
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1528
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S342 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1591
+[u S347 . 1 `S342 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES347  1 e 1 @144 ]
+[s S87 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 BCL1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1628
+[u S96 . 1 `S87 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES96  1 e 1 @145 ]
+[s S693 . 1 `uc 1 NCO1IE 1 0 :1:0 
+`uc 1 TMR4IE 1 0 :1:1 
+`uc 1 BCL2IE 1 0 :1:2 
+`uc 1 SSP2IE 1 0 :1:3 
+`uc 1 NVMIE 1 0 :1:4 
+`uc 1 C1IE 1 0 :1:5 
+`uc 1 C2IE 1 0 :1:6 
+`uc 1 TMR6IE 1 0 :1:7 
+]
+"1690
+[u S702 . 1 `S693 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES702  1 e 1 @146 ]
+"1925
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1945
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1965
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S23 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :6:2 
+]
+"1991
+[s S27 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+[s S36 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S39 . 1 `S23 1 . 1 0 `S27 1 . 1 0 `S36 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES39  1 e 1 @157 ]
+"2051
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2123
+[v _ADACT ADACT `VEuc  1 e 1 @159 ]
+"2175
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2220
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S941 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"2235
+[u S948 . 1 `S941 1 . 1 0 ]
+[v _LATCbits LATCbits `VES948  1 e 1 @270 ]
+"2763
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2808
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3713
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3763
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5919
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"5964
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"6021
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"6041
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"6061
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+[s S230 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+"6081
+[s S236 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[u S241 . 1 `S230 1 . 1 0 `S236 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES241  1 e 1 @659 ]
+[s S198 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"6353
+[s S203 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S212 . 1 `S198 1 . 1 0 `S203 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES212  1 e 1 @671 ]
+"6418
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"6463
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @782 ]
+"6829
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+"6879
+[v _INLVLC INLVLC `VEuc  1 e 1 @910 ]
+"6929
+[v _IOCAP IOCAP `VEuc  1 e 1 @913 ]
+"6979
+[v _IOCAN IOCAN `VEuc  1 e 1 @914 ]
+"7029
+[v _IOCAF IOCAF `VEuc  1 e 1 @915 ]
+"7079
+[v _IOCCP IOCCP `VEuc  1 e 1 @919 ]
+"7129
+[v _IOCCN IOCCN `VEuc  1 e 1 @920 ]
+"7179
+[v _IOCCF IOCCF `VEuc  1 e 1 @921 ]
+"7987
+[v _TMR6 TMR6 `VEuc  1 e 1 @1052 ]
+"8007
+[v _PR6 PR6 `VEuc  1 e 1 @1053 ]
+"8027
+[v _T6CON T6CON `VEuc  1 e 1 @1054 ]
+[s S665 . 1 `uc 1 T6CKPS 1 0 :2:0 
+`uc 1 TMR6ON 1 0 :1:2 
+`uc 1 T6OUTPS 1 0 :4:3 
+]
+"8048
+[s S669 . 1 `uc 1 T6CKPS0 1 0 :1:0 
+`uc 1 T6CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T6OUTPS0 1 0 :1:3 
+`uc 1 T6OUTPS1 1 0 :1:4 
+`uc 1 T6OUTPS2 1 0 :1:5 
+`uc 1 T6OUTPS3 1 0 :1:6 
+]
+[u S677 . 1 `S665 1 . 1 0 `S669 1 . 1 0 ]
+[v _T6CONbits T6CONbits `VES677  1 e 1 @1054 ]
+"8344
+[v _PWM5DCL PWM5DCL `VEuc  1 e 1 @1559 ]
+"8380
+[v _PWM5DCH PWM5DCH `VEuc  1 e 1 @1560 ]
+"8450
+[v _PWM5CON PWM5CON `VEuc  1 e 1 @1561 ]
+[s S273 . 1 `uc 1 P5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+]
+"8705
+[s S276 . 1 `uc 1 P5TSEL0 1 0 :1:0 
+`uc 1 P5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+]
+[u S281 . 1 `S273 1 . 1 0 `S276 1 . 1 0 ]
+[v _PWMTMRSbits PWMTMRSbits `VES281  1 e 1 @1567 ]
+"11900
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2329 ]
+"12040
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2331 ]
+"12085
+[v _OSCSTAT1 OSCSTAT1 `VEuc  1 e 1 @2332 ]
+"12137
+[v _OSCEN OSCEN `VEuc  1 e 1 @2333 ]
+"12183
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2334 ]
+"12241
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2335 ]
+"13791
+[v _RA2PPS RA2PPS `VEuc  1 e 1 @3730 ]
+"13843
+[v _RA4PPS RA4PPS `VEuc  1 e 1 @3732 ]
+"41 E:\Buggy_project\files\Super_Fast_Buggy.X\main.c
+[v _ADCresult ADCresult `us  1 e 2 0 ]
+"42
+[v _DutyCycle DutyCycle `us  1 e 2 0 ]
+"45 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_ConversionDoneCallback ADC_ConversionDoneCallback `*.37(v  1 s 2 ADC_ConversionDoneCallback ]
+"38 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/interrupt.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+"38 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr0.c
+[v _tmr0PeriodCount tmr0PeriodCount `VEus  1 s 2 tmr0PeriodCount ]
+"39
+[v _TMR0_OverflowCallback TMR0_OverflowCallback `*.37(v  1 s 2 TMR0_OverflowCallback ]
+"57 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_PeriodMatchCallback TMR2_PeriodMatchCallback `*.37(v  1 s 2 TMR2_PeriodMatchCallback ]
+"57 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr6.c
+[v _TMR6_PeriodMatchCallback TMR6_PeriodMatchCallback `*.37(v  1 s 2 TMR6_PeriodMatchCallback ]
+"54 E:\Buggy_project\files\Super_Fast_Buggy.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"82
+} 0
+"89 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+{
+"92
+} 0
+"79 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Start TMR0_Start `(v  1 e 1 0 ]
+{
+"82
+} 0
+"151
+[v _TMR0_OverflowCallbackRegister TMR0_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR0_OverflowCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 4 ]
+"154
+} 0
+"39 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"64 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr6.c
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"64 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"46 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"45 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/pwm/src/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"38 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"102
+} 0
+"40 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"101
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"103
+} 0
+"39 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"51 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/pwm/src/ccp1.c
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+{
+"66
+} 0
+"47 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"66
+} 0
+"59 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"81
+} 0
+"139 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"149
+} 0
+"156
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
+{
+"159
+} 0
+"44 E:\Buggy_project\files\Super_Fast_Buggy.X\main.c
+[v _timer_Interrupt_Routine timer_Interrupt_Routine `(v  1 e 1 0 ]
+{
+"52
+} 0
+"15 D:\MPLABX\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"63 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/pwm/src/pwm5.c
+[v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM5_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"70
+} 0
+"114 E:\Buggy_project\files\Super_Fast_Buggy.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_ChannelSelectAndConvert ADC_ChannelSelectAndConvert `(s  1 e 2 0 ]
+{
+[v ADC_ChannelSelectAndConvert@channel channel `E6336  1 p 1 wreg ]
+[v ADC_ChannelSelectAndConvert@channel channel `E6336  1 p 1 wreg ]
+"116
+[v ADC_ChannelSelectAndConvert@channel channel `E6336  1 p 1 3 ]
+"124
+} 1
+"161
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+{
+"173
+} 0

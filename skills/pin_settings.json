@@ -1,0 +1,146 @@
+{
+  "project_name": "Super_Fast_Buggy",
+  "chip": "PIC16F18326",
+  "generated_date": "2026-02-14",
+  "description": "引脚配置文件 - 用于同步项目引脚设置",
+  "pin_configuration": {
+    "general_settings": {
+      "TRISA": "0x2B",
+      "TRISC": "0x3D",
+      "ANSELA": "0x23",
+      "ANSELC": "0x3D",
+      "WPUA": "0x0",
+      "WPUC": "0x0",
+      "ODCONA": "0x0",
+      "ODCONC": "0x0",
+      "SLRCONA": "0x37",
+      "SLRCONC": "0x3F",
+      "INLVLA": "0x3F",
+      "INLVLC": "0x3F"
+    },
+    "pins": [
+      {
+        "pin_name": "RA0",
+        "pin_alias": "IO_RA0",
+        "direction": "INPUT",
+        "mode": "ANALOG",
+        "function": "ADC Channel ANA0",
+        "adc_channel": "ADC_CHANNEL_ANA0",
+        "pull_up": "DISABLED",
+        "open_drain": "PUSH_PULL",
+        "description": "模拟输入 - ADC通道0"
+      },
+      {
+        "pin_name": "RA2",
+        "pin_alias": "IO_RA2",
+        "direction": "OUTPUT",
+        "mode": "DIGITAL",
+        "function": "CCP1 PWM Output",
+        "pps_output": "RA2PPS = 12 (CCP1:CCP1)",
+        "pull_up": "DISABLED",
+        "open_drain": "PUSH_PULL",
+        "description": "PWM1输出 - 通过CCP1模块"
+      },
+      {
+        "pin_name": "RA4",
+        "pin_alias": "IO_RA4",
+        "direction": "OUTPUT",
+        "mode": "DIGITAL",
+        "function": "PWM5 Output",
+        "pps_output": "RA4PPS = 2 (PWM5:PWM5)",
+        "pull_up": "DISABLED",
+        "open_drain": "PUSH_PULL",
+        "description": "PWM5输出"
+      },
+      {
+        "pin_name": "RC1",
+        "pin_alias": "IO_RC1",
+        "direction": "OUTPUT",
+        "mode": "DIGITAL",
+        "function": "GPIO Toggle",
+        "pull_up": "DISABLED",
+        "open_drain": "PUSH_PULL",
+        "description": "通用输出 - 在定时器中断中切换状态"
+      },
+      {
+        "pin_name": "RC2",
+        "pin_alias": "IO_RC2",
+        "direction": "INPUT",
+        "mode": "ANALOG",
+        "function": "ADC Channel ANC2",
+        "adc_channel": "ADC_CHANNEL_ANC2",
+        "pull_up": "DISABLED",
+        "open_drain": "PUSH_PULL",
+        "description": "模拟输入 - ADC通道C2，用于读取电压值"
+      }
+    ]
+  },
+  "modules": {
+    "adc": {
+      "resolution": "10-bit",
+      "channels": [
+        {
+          "channel": "ADC_CHANNEL_ANA0",
+          "pin": "RA0"
+        },
+        {
+          "channel": "ADC_CHANNEL_ANC2",
+          "pin": "RC2"
+        }
+      ],
+      "acquisition_delay": "5us"
+    },
+    "pwm": {
+      "pwm1": {
+        "module": "CCP1",
+        "output_pin": "RA2",
+        "initial_duty_value": "未指定"
+      },
+      "pwm5": {
+        "module": "PWM5",
+        "output_pin": "RA4",
+        "initial_duty_value": "299"
+      }
+    },
+    "timer": {
+      "timer0": {
+        "mode": "16-bit",
+        "clock_freq": "750000Hz",
+        "max_count": "65535",
+        "interrupt_enabled": true,
+        "callback_function": "timer_Interrupt_Routine"
+      },
+      "timer2": {
+        "mode": "8-bit",
+        "clock_freq": "11718.75Hz",
+        "max_count": "255",
+        "interrupt_enabled": true
+      }
+    }
+  },
+  "application_logic": {
+    "main_function": "无限循环，主要逻辑在中断中处理",
+    "timer_interrupt": {
+      "description": "定时器0溢出中断处理函数",
+      "operations": [
+        "切换RC1引脚状态 (IO_RC1_Toggle)",
+        "从RC2读取ADC值 (ADC_CHANNEL_ANC2)",
+        "计算PWM占空比: DutyCycle = (ADCresult * 596) / 1024",
+        "将占空比加载到PWM5 (PWM5_LoadDutyValue)"
+      ]
+    },
+    "voltage_control": {
+      "adc_channel": "ADC_CHANNEL_ANC2 (RC2)",
+      "pwm_output": "PWM5 (RA4)",
+      "conversion_formula": "DutyCycle = (ADCresult * 596) / 1024",
+      "description": "根据RC2的电压值调节RA4的PWM输出"
+    }
+  },
+  "notes": [
+    "项目使用MCC (MPLAB Code Configurator) 生成驱动代码",
+    "定时器0中断用于周期性读取ADC并更新PWM",
+    "RC1引脚在中断中切换，可用于调试或指示灯",
+    "PWM1(CCP1)和PWM5分别输出到RA2和RA4",
+    "ADC使用10位分辨率，两个模拟输入通道"
+  ]
+}

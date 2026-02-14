@@ -1,0 +1,11 @@
+2026.02.10
+	已完成内容：
+		目前已经完成"D:\GoogleDrive\Cloud\Buggy_project\guidence\control_system\PIC Getting Started 	Guide_v1.3.pdf"中所有的指定操作；
+
+	将要完成的内容：
+		搞懂P/PI/PID控制算法；
+		完成接口配置；
+		弄懂TMR的作用以及INTERRUPT函数的作用；
+
+	所处阶段：
+		新手

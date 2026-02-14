@@ -46,7 +46,7 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISA = 0xB;
+    TRISA = 0x2B;
     TRISC = 0x3D;
 
     /**
@@ -83,7 +83,6 @@ void PIN_MANAGER_Initialize(void)
     */
     RA2PPS = 12;  //RA2->CCP1:CCP1;
     RA4PPS = 2;  //RA4->PWM5:PWM5;
-    RA5PPS = 28;  //RA5->TMR0:TMR0;
 
     /**
     APFCON registers

@@ -94,7 +94,7 @@
       "pwm1": {
         "module": "CCP1",
         "output_pin": "RA2",
-        "initial_duty_value": "未指定"
+        "initial_duty_value": "469"
       },
       "pwm5": {
         "module": "PWM5",

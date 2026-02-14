@@ -8,3 +8,6 @@ Thumbs.db
 
 # 忽略敏感信息（如果你有存放 Key 的 .env 文件）
 .env
+
+# 忽略日志文件夹
+log/

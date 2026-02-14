@@ -72,7 +72,11 @@ function Get-ChangeSummary {
 # ================================================================================
 
 # 日志文件路径
-$LOG_FILE = Join-Path $PROJECT_PATH "backup_log_$(Get-Date -Format 'yyyyMMdd').txt"
+$LOG_DIR = Join-Path $PROJECT_PATH "log"
+if (-not (Test-Path $LOG_DIR)) {
+    New-Item -ItemType Directory -Path $LOG_DIR -Force | Out-Null
+}
+$LOG_FILE = Join-Path $LOG_DIR "backup_log_$(Get-Date -Format 'yyyyMMdd').txt"
 
 # 启动日志记录
 $logEntries = @()
